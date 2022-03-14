@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        deployment: ${metadata.name}
+        deployment: ${aws-secret:tfy-ctl-us-east-1-develop-github-key}
     spec:
       containers:
       - name: nginx
