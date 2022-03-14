@@ -16,7 +16,7 @@ spec:
         controller:
           pod:
             extraLabels:
-              test-key: test-val
+              test-key: metadata.name
   project: default
   syncPolicy:
     automated: {}
