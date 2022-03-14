@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        deployment: ${aws-secrets:test-key}
+        deployment: ${metadata.name}
     spec:
       containers:
       - name: nginx
