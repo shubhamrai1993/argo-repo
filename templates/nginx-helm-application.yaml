@@ -16,7 +16,7 @@ spec:
         controller:
           pod:
             annotations:
-              test-key: ${aws-ssm:/develop/tfy-jfk-us-east-1-develop/grafana-service-label}
+              test-key: {{ .Values.podLabel }}
   project: default
   syncPolicy:
     automated: {}
