@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: argo-test
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://helm.nginx.com/stable'
